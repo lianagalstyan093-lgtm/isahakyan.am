@@ -19,11 +19,13 @@
     <div class="fixed top-0 left-0 h-full z-[9999]">
         <!-- Sidebar -->
         <nav id="sidebar"
-            class="h-full w-64 bg-[#6C1D2B] text-white transform -translate-x-full md:translate-x-0 transition-transform duration-300 shadow-lg">
+            class="fixed top-0 left-0 h-full w-64 bg-[#6C1D2B] text-white z-50 shadow-lg transform -translate-x-full transition-transform duration-300 md:translate-x-0">
             <!-- Header -->
-            <div class="p-6 text-2xl font-serif text-white border-b border-white/20 z-[1001]">
-                Բովանդակություն
-            </div>
+            <a href="index.html" class="block">
+                <div class="p-6 text-2xl font-serif text-white border-b border-white/20 z-[1001]">
+                    Բովանդակություն
+                </div>
+            </a>
             <!-- Navigation Links -->
             <ul class="mt-6 space-y-4 px-6 text-lg">
                 <li>
@@ -87,7 +89,7 @@
                 </div>
                 <div class="order-1 md:order-2 flex justify-center">
                     <div class="w-full max-w-md">
-                        <img src="images/isahakyan.png" alt="Ավետիք Իսահակյան"
+                        <img src="./images/isahakyan.png" alt="Ավետիք Իսահակյան"
                             class="object-cover w-full h-auto border-4 border-white/50 rounded-lg shadow-md">
                     </div>
                 </div>
@@ -244,9 +246,29 @@
                 sidebarOpen = !sidebarOpen;
                 sidebar.style.transform = sidebarOpen ? 'translateX(0)' : 'translateX(-100%)';
             });
+
+            // Если у тебя есть кнопка openSidebar/closeSidebar
+            const openBtn = document.getElementById('openSidebar'); // твоя кнопка
+            const closeBtn = document.getElementById('closeSidebar'); // твоя кнопка
+
+            if (openBtn) {
+                openBtn.addEventListener('click', () => {
+                    sidebar.classList.remove('-translate-x-full');
+                    sidebar.classList.add('translate-x-0');
+                });
+            }
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    sidebar.classList.add('-translate-x-full');
+                    sidebar.classList.remove('translate-x-0');
+                });
+            }
         </script>
     </main>
-</body>
 
+
+
+</body>
 
 </html>
