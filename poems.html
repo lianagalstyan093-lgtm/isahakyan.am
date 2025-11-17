@@ -14,6 +14,59 @@
 </head>
 
 <body class="bg-cream-50 min-h-screen font-serif">
+    <div class="fixed top-0 left-0 h-full z-[9999]">
+        <!-- Sidebar -->
+        <nav id="sidebar"
+            class="fixed top-0 left-0 h-full w-64 bg-[#6C1D2B] text-white z-50 shadow-lg transform -translate-x-full transition-transform duration-300 md:translate-x-0">
+            <!-- Header -->
+            <a href="index.html" class="block">
+                <div class="p-6 text-2xl font-serif text-white border-b border-white/20 z-[1001]">
+                    Բովանդակություն
+                </div>
+            </a>
+            <!-- Navigation Links -->
+            <ul class="mt-6 space-y-4 px-6 text-lg">
+                <li>
+                    <a href="songs.html" class="block px-3 py-2 rounded-md transition-all duration-300
+                  hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Երգեր
+                    </a>
+                </li>
+                <li>
+                    <a href="poems.html" class="block px-3 py-2 rounded-md transition-all duration-300
+    hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Բանաստեղծություններ (տեսահոլովակներ)
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Կենսագրություն
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Հայտնի ստեղծագործություններ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Մեջբերումներ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Mobile Toggle Button -->
+    <button id="menu-btn"
+        class="md:hidden fixed top-4 left-4 z-[10000] bg-[#6C1D2B] text-white p-2 rounded-md focus:outline-none shadow-lg">
+        <i data-feather="menu"></i>
+    </button>
     <main class="container mx-auto px-4 py-12 max-w-5xl">
         <h1 class="text-maroon-800 text-5xl md:text-6xl text-center mb-16 font-bold tracking-wider">Բանաստեղծություններ
         </h1>
@@ -23,7 +76,8 @@
             <!-- Poem Card 1 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl">
                 <div class="px-8 pt-8">
-                    <h2 class="text-maroon-700 text-3xl font-semibold mb-6">Կարդում է ՀՀ վաստակավոր արտիստ ՍԻԼՎԱ ՅՈՒԶԲԱՇՅԱՆԸ</h2>
+                    <h2 class="text-maroon-700 text-3xl font-semibold mb-6">Կարդում է ՀՀ վաստակավոր արտիստ ՍԻԼՎԱ
+                        ՅՈՒԶԲԱՇՅԱՆԸ</h2>
                 </div>
                 <div class="aspect-w-16 aspect-h-9 bg-black overflow-hidden">
                     <video controls class="w-full h-full object-cover">
@@ -36,7 +90,8 @@
             <!-- Poem Card 2 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl">
                 <div class="px-8 pt-8">
-                    <h2 class="text-maroon-700 text-3xl font-semibold mb-6">Ավետիք Իսահակյան-«Զարոյին ու Շուշիկին»-պոեզիա</h2>
+                    <h2 class="text-maroon-700 text-3xl font-semibold mb-6">Ավետիք Իսահակյան-«Զարոյին ու
+                        Շուշիկին»-պոեզիա</h2>
                 </div>
                 <div class="aspect-w-16 aspect-h-9 bg-black overflow-hidden">
                     <video controls class="w-full h-full object-cover">
@@ -60,6 +115,37 @@
             </article>
 
         </div>
+        
+        <script>
+            feather.replace(); // иконки
+
+            const menuBtn = document.getElementById('menu-btn');
+            const sidebar = document.getElementById('sidebar');
+            let sidebarOpen = false;
+
+            menuBtn.addEventListener('click', () => {
+                sidebarOpen = !sidebarOpen;
+                sidebar.style.transform = sidebarOpen ? 'translateX(0)' : 'translateX(-100%)';
+            });
+
+            // Если у тебя есть кнопка openSidebar/closeSidebar
+            const openBtn = document.getElementById('openSidebar'); // твоя кнопка
+            const closeBtn = document.getElementById('closeSidebar'); // твоя кнопка
+
+            if (openBtn) {
+                openBtn.addEventListener('click', () => {
+                    sidebar.classList.remove('-translate-x-full');
+                    sidebar.classList.add('translate-x-0');
+                });
+            }
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    sidebar.classList.add('-translate-x-full');
+                    sidebar.classList.remove('translate-x-0');
+                });
+            }
+        </script>
     </main>
 
     <script>
@@ -85,6 +171,8 @@
             }
         }
     </script>
+
+    
 </body>
 
 </html>
