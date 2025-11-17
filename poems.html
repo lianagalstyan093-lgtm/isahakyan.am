@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Բանաստեղծություններ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-cream-50 min-h-screen font-serif">
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+        <h1 class="text-maroon-800 text-5xl md:text-6xl text-center mb-16 font-bold tracking-wider">Բանաստեղծություններ
+        </h1>
+
+        <div class="space-y-12">
+
+            <!-- Poem Card 1 -->
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl">
+                <div class="px-8 pt-8">
+                    <h2 class="text-maroon-700 text-3xl font-semibold mb-6">Կարդում է ՀՀ վաստակավոր արտիստ ՍԻԼՎԱ ՅՈՒԶԲԱՇՅԱՆԸ</h2>
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-black overflow-hidden">
+                    <video controls class="w-full h-full object-cover">
+                        <source src="video/vd1.mp4" type="video/mp4">
+                        Ձեր դիտարկիչը չի աջակցում վիդեո ձևաչափին։
+                    </video>
+                </div>
+            </article>
+
+            <!-- Poem Card 2 -->
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl">
+                <div class="px-8 pt-8">
+                    <h2 class="text-maroon-700 text-3xl font-semibold mb-6">Ավետիք Իսահակյան-«Զարոյին ու Շուշիկին»-պոեզիա</h2>
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-black overflow-hidden">
+                    <video controls class="w-full h-full object-cover">
+                        <source src="video/vd2.mp4" type="video/mp4">
+                        Ձեր դիտարկիչը չի աջակցում վիդեո ձևաչափին։
+                    </video>
+                </div>
+            </article>
+
+            <!-- Poem Card 3 -->
+            <article class="bg-white rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl">
+                <div class="px-8 pt-8">
+                    <h2 class="text-maroon-700 text-3xl font-semibold mb-6">Ավետիք Իսահակյան - Սիրո վեպը</h2>
+                </div>
+                <div class="aspect-w-16 aspect-h-9 bg-black overflow-hidden">
+                    <video controls class="w-full h-full object-cover">
+                        <source src="video/vd3.mp4" type="video/mp4">
+                        Ձեր դիտարկիչը չի աջակցում վիդեո ձևաչափին։
+                    </video>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <script>
+        feather.replace();
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            600: '#800000',
+                            700: '#660000',
+                            800: '#4d0000',
+                        },
+                        cream: {
+                            50: '#f8f5f0',
+                            100: '#f1ebe0',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

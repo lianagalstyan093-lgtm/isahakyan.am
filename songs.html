@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Երգեր</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+
+<body class="bg-[#F8F4EE] min-h-screen">
+    <div class="fixed top-0 left-0 h-full z-[9999]">
+        <!-- Sidebar -->
+        <nav id="sidebar"
+            class="h-full w-64 bg-[#6C1D2B] text-white transform -translate-x-full md:translate-x-0 transition-transform duration-300 shadow-lg">
+            <!-- Header -->
+            <div class="p-6 text-2xl font-serif text-white border-b border-white/20 z-[1001]">
+                Բովանդակություն
+            </div>
+            <!-- Navigation Links -->
+            <ul class="mt-6 space-y-4 px-6 text-lg">
+                <li>
+                    <a href="songs.html" class="block px-3 py-2 rounded-md transition-all duration-300
+                  hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Երգեր
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Կենսագրություն
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Հայտնի ստեղծագործություններ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Մեջբերումներ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Mobile Toggle Button -->
+    <button id="menu-btn"
+        class="md:hidden fixed top-4 left-4 z-[10000] bg-[#6C1D2B] text-white p-2 rounded-md focus:outline-none shadow-lg">
+        <i data-feather="menu"></i>
+    </button>
+    <main class="container mx-auto px-4 py-8">
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 font-playfair mb-6">Երրգեր</h1>
+            <div class="flex justify-center">
+                <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-md overflow-hidden">
+                    <img src="./images/isahakyan.png" alt="Ավետիք  Իսահակյան" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center">
+
+            <!-- Song 1 -->
+            <div class="song-card w-full md:w-[95%] bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-2">Մարյանա</h3>
+                <p class="mb-4">
+                    Լուսնակն իմ լուսնակ,<br>
+                    Ուր ես գնում այդպես,<br>
+                    Իմ սիրուն հոոգուն<br>
+                    Դու կարոտ ես բերում...
+                </p>
+                <audio controls class="w-full">
+                    <source src="./audio/song1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- Song 2 -->
+            <div class="song-card w-full md:w-[95%] bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-2">Աննա</h3>
+                <p class="mb-4">...сюда текст песни...</p>
+                <audio controls class="w-full">
+                    <source src="./audio/song2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- Song 3 -->
+            <div class="song-card w-full md:w-[95%] bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-2">Բալես</h3>
+                <p class="mb-4">...այստեղ երգի տեքստը...</p>
+                <audio controls class="w-full">
+                    <source src="./audio/song3.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <!-- Song 4 -->
+            <div class="song-card w-full md:w-[95%] bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-2">Սուլում են սուլում</h3>
+                <p class="mb-4">...այստեղ երգի տեքստը...</p>
+                <audio controls class="w-full">
+                    <source src="./audio/song4.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </div>
+
+        <!-- ПЯТАЯ КАРТОЧКА — ВНИЗУ ПО ЦЕНТРУ -->
+        <div class="flex justify-center mt-6">
+            <div class="song-card w-full md:w-1/2 bg-white p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-2">Դրախտի փերի</h3>
+                <p class="mb-4">...այստեղ երգի տեքստը...</p>
+                <audio controls class="w-full">
+                    <source src="./audio/song5.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <script>
+            feather.replace(); // иконки
+
+            const menuBtn = document.getElementById('menu-btn');
+            const sidebar = document.getElementById('sidebar');
+            let sidebarOpen = false;
+
+            menuBtn.addEventListener('click', () => {
+                sidebarOpen = !sidebarOpen;
+                sidebar.style.transform = sidebarOpen ? 'translateX(0)' : 'translateX(-100%)';
+            });
+        </script>
+    </main>
+
+    <!-- Footer Space -->
+    <div class="h-32"></div>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

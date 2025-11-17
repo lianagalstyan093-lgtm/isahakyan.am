@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ավետիք Իսահակյան</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#F8F4EE] text-[#3A3226] font-sans">
+    <custom-header></custom-header>
+    <div class="fixed top-0 left-0 h-full z-[9999]">
+        <!-- Sidebar -->
+        <nav id="sidebar"
+            class="h-full w-64 bg-[#6C1D2B] text-white transform -translate-x-full md:translate-x-0 transition-transform duration-300 shadow-lg">
+            <!-- Header -->
+            <div class="p-6 text-2xl font-serif text-white border-b border-white/20 z-[1001]">
+                Բովանդակություն
+            </div>
+            <!-- Navigation Links -->
+            <ul class="mt-6 space-y-4 px-6 text-lg">
+                <li>
+                    <a href="songs.html" class="block px-3 py-2 rounded-md transition-all duration-300
+                  hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Երգեր
+                    </a>
+                </li>
+                <li>
+                    <a href="poems.html" class="block px-3 py-2 rounded-md transition-all duration-300
+    hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Բանաստեղծություններ (տեսահոլովակներ)
+                    </a>
+                </li>
+                <li>
+                    <a href="#bio" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Կենսագրություն
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#works" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Հայտնի ստեղծագործություններ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#quotes" class="block px-3 py-2 rounded-md transition-all duration-300
+        hover:text-[#6C1D2B] hover:bg-[#F8F4EE] hover:shadow-lg">
+                        Մեջբերումներ
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Mobile Toggle Button -->
+    <button id="menu-btn"
+        class="md:hidden fixed top-4 left-4 z-[10000] bg-[#6C1D2B] text-white p-2 rounded-md focus:outline-none shadow-lg">
+        <i data-feather="menu"></i>
+    </button>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-[65vh] py-8 px-4 flex items-center bg-[#F8F4EE]">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center 
+              bg-[#FAF5EE] p-6 rounded-xl shadow-lg">
+                <div class="order-2 md:order-1">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif text-[#6C1D2B] mb-4">
+                        Ավետիք Իսահակյան
+                    </h1>
+                    <p class="text-xl md:text-2xl text-[#2C2C2C] font-light mb-4">1875 - 1957</p>
+                    <p class="text-lg leading-relaxed text-[#2C2C2C]">
+                        «Ավետիք Իսահակյանը մեծ հայ բանաստեղծ է, որի գործերը հայ գրականության անուրանալի մաս են դարձել։
+                        Նրա ստեղծագործությունները արտահայտում են հայ ժողովրդի զգացմունքները, ցավն ու երազանքները։»
+                    </p>
+                    <p class="text-lg leading-relaxed text-[#2C2C2C]">Ավետիք Իսահակյանը համաշխարհային ճանաչման արժանացած
+                        բանաստեղծ է։ Նրան շատ բարձր են գնահատել թե՛ Արևմուտքում և թե՛ Արևելքում։</p>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <div class="w-full max-w-md">
+                        <img src="./images/isahakyan.png" alt="Ավետիք Իսահակյան"
+                            class="object-cover w-full h-auto border-4 border-white/50 rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Overview -->
+        <section class="py-16 px-4 max-w-4xl mx-auto my-8">
+            <h2 class="text-3xl font-serif text-[#6C1D2B] mb-8 text-center">Հայ մեծ բանաստեղծ</h2>
+            <div class="space-y-4 text-lg leading-relaxed">
+                <p>Ավետիք Իսահակյանը հայ ականավոր բանաստեղծ, գրող և հասարակական գործիչ է, ում ստեղծագործությունը դարձել
+                    է 20-րդ դարի հայ գրականության անբաժանելի մասը:</p>
+                <p>Խոր քնարականությամբ և փիլիսոփայական մտորումներով լցված նրա ստեղծագործություններն արտացոլում են հայ
+                    ժողովրդի հոգին, նրա պատմությունը, տառապանքներն ու հույսերը:</p>
+                <p>Իսահակյանը համարվում է հայ նոր գրականության հիմնասյուներից մեկը, նրա ազդեցությունը տարածվում է
+                    Հայաստանի սահմաններից շատ հեռու:</p>
+            </div>
+        </section>
+
+        <!-- Biography -->
+        <section class="py-16 px-4 my-8 bg-[#FAF8F4] rounded-xl shadow-lg">
+            <div class="max-w-4xl mx-auto">
+                <h2 id="bio" class="text-3xl font-serif text-[#6C1D2B] mb-8 text-center">Կենսագրություն</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-serif mb-4">Վաղ տարիներ</h3>
+                        <p class="mb-4">Ավետիք Իսահակյանը ծնվել է 1875 թվականի հոկտեմբերի 30-ին Ալեքսանդրապոլում
+                            (այժմ ՝ Գյումրի), արհեստավորի ընտանիքում ։ Մանկուց հետաքրքրություն է ցուցաբերել գրականության
+                            և ժողովրդական արվեստի նկատմամբ ։ </p>
+                        <p class="mb-4">«Ահա հայրս ու մայրս։ Հայրս՝ լուրջ դեմքով, բարի ու պատկառելի, մայրս՝ սրբուհու
+                            պատկերով, անուշ, վշտոտ ու գթառատ․․․»,- գրում է Իսահակյանը։</p>
+                        <p class="mb-4">Ավարտել է տեղի դպրոցը, այնուհետև սովորել է Էջմիածնի հոգևոր ճեմարանում, սակայն չի
+                            ավարտել այն դասախոսների հետ ունեցած տարաձայնությունների պատճառով:</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-serif mb-4">Ստեղծագործական ուղի</h3>
+                        <p class="mb-4">Առաջին բանաստեղծությունները հրատարակել է 1892 թվականին ։ 1896 թվականին լույս
+                            տեսավ նրա առաջին ժողովածուն ՝ "երգեր և վերքեր", որը նրան համբավ բերեց ։ </p>
+                        <p class="mb-4">1908-1936 թվականներին ապրել է արտերկրում (Գերմանիա, Շվեյցարիա, Ֆրանսիա), որտեղ
+                            շարունակել է ակտիվ գրական գործունեությունը ։ </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-serif mb-4">Հասուն տարիներ</h3>
+                        <p class="mb-4">1936 թվականին վերադառնալով Հայաստան ՝ զբաղվել է հասարակական գործունեությամբ,
+                            եղել է ՀԽՍՀ Գերագույն Խորհրդի պատգամավոր ։ </p>
+                        <p class="mb-4">1943թ. ընտրվել է ՀԽՍՀ ԳԱ ակադեմիկոս: 1946-1957 թվականներին եղել է Հայաստանի
+                            գրողների միության նախագահ։</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-serif mb-4">Ժառանգություն</h3>
+                        <p class="mb-4">Մահացել է 1957թ.հոկտեմբերի 17-ին Երևանում: Թաղված է Կոմիտասի անվան պանթեոնում:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Famous Works -->
+        <section class="py-16 px-4 max-w-4xl mx-auto my-8">
+            <h2 id="works" class="text-3xl font-serif text-[#6C1D2B] mb-8 text-center">Հայտնի ստեղծագործություններ</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- 1 -->
+                <a href="erger-u-verqer.html" class="block">
+                    <div
+                        class="border-l-4 border-[#6C1D2B] pl-4 py-2 hover:bg-white/50 hover:shadow transition duration-200 rounded">
+                        <h3 class="text-xl font-serif mb-2">"Երգեր ու վերքեր" (1897)</h3>
+                        <p>Առաջին բանաստեղծական ժողովածուն, որը համբավ բերեց երիտասարդ բանաստեղծին:</p>
+                    </div>
+                </a>
+
+                <!-- 2 -->
+                <a href="abu-lala.html" class="block">
+                    <div
+                        class="border-l-4 border-[#6C1D2B] pl-4 py-2 hover:bg-white/50 hover:shadow transition duration-200 rounded">
+                        <h3 class="text-xl font-serif mb-2">"Աբու Լալա Մահարի" (1909-1911)</h3>
+                        <p>Փիլիսոփայական բանաստեղծություն ՝ նվիրված 11-րդ դարի սիրիացի մտածող բանաստեղծին:</p>
+                    </div>
+                </a>
+
+                <!-- 3 -->
+                <a href="chibukh.html" class="block">
+                    <div
+                        class="border-l-4 border-[#6C1D2B] pl-4 py-2 hover:bg-white/50 hover:shadow transition duration-200 rounded">
+                        <h3 class="text-xl font-serif mb-2">"Համբերանքի չիբուխը" (1937)</h3>
+                        <p>Պատմություն այն մասին, թե ինչու ամեն ինչ պետք է անել համբերությամբ:</p>
+                    </div>
+                </a>
+
+                <!-- 4 -->
+                <a href="naxniner.html" class="block">
+                    <div
+                        class="border-l-4 border-[#6C1D2B] pl-4 py-2 hover:bg-white/50 hover:shadow transition duration-200 rounded">
+                        <h3 class="text-xl font-serif mb-2">"Մեր նախնիները" (1944)</h3>
+                        <p>Պատմական պոեմ հայերի անկախության համար մղված պայքարի մասին:</p>
+                    </div>
+                </a>
+
+                <!-- 5 -->
+                <a href="hayrenikis.html" class="block">
+                    <div
+                        class="border-l-4 border-[#6C1D2B] pl-4 py-2 hover:bg-white/50 hover:shadow transition duration-200 rounded">
+                        <h3 class="text-xl font-serif mb-2">"Հայրենիքիս" (1948)</h3>
+                        <p>Հայաստանի հանդեպ սիրով լեցուն քնարական ստեղծագործություն:</p>
+                    </div>
+                </a>
+
+                <!-- 6 -->
+                <a href="hushagrutyun.html" class="block">
+                    <div
+                        class="border-l-4 border-[#6C1D2B] pl-4 py-2 hover:bg-white/50 hover:shadow transition duration-200 rounded">
+                        <h3 class="text-xl font-serif mb-2">Հուշագրություն (1955-1957)</h3>
+                        <p>Հուշեր բանաստեղծի կյանքի և ժամանակակիցների մասին:</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Quotes -->
+        <section class="py-16 px-4 my-8 bg-[#FAF8F4] rounded-xl shadow-lg">
+            <div class="max-w-4xl mx-auto">
+                <h2 id="quotes" class="text-3xl font-serif text-[#6C1D2B] mb-8 text-center">Մեջբերումներ</h2>
+                <div class="space-y-8">
+                    <blockquote
+                        class="border-l-4 border-[#6C1D2B] pl-6 py-4 italic text-lg rounded-lg bg-[#F4F1EC] shadow-md">
+                        "Պոեզիան հոգու ճիչ է, որը չի կարող լռվել ոչ մի ուժի կողմից:"
+                    </blockquote>
+                    <blockquote
+                        class="border-l-4 border-[#6C1D2B] pl-6 py-4 italic text-lg rounded-lg bg-[#F4F1EC] shadow-md">
+                        "Առանց անցյալի ժողովուրդը ապագա չունեցող ժողովուրդ է: Մենք պետք է աչքի լույսի պես պահենք մեր
+                        պատմությունը ։ "
+                    </blockquote>
+                    <blockquote
+                        class="border-l-4 border-[#6C1D2B] pl-6 py-4 italic text-lg rounded-lg bg-[#F4F1EC] shadow-md">
+                        "Արվեստը պետք է բարձրացնի մարդուն, ոչ թե ստորացնի նրան: Այն պետք է լույս բերի Նույնիսկ Ամենա"
+                    </blockquote>
+                    <blockquote
+                        class="border-l-4 border-[#6C1D2B] pl-6 py-4 italic text-lg rounded-lg bg-[#F4F1EC] shadow-md">
+                        "Հայրենիքի հանդեպ սերը ոչ թե մեծ խոսքեր են, այլ լուռ, բայց անխորտակելի մոմ բոլորի սրտում
+                        իսկական մարդ:"
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+        <script>
+            feather.replace(); // иконки
+
+            const menuBtn = document.getElementById('menu-btn');
+            const sidebar = document.getElementById('sidebar');
+            let sidebarOpen = false;
+
+            menuBtn.addEventListener('click', () => {
+                sidebarOpen = !sidebarOpen;
+                sidebar.style.transform = sidebarOpen ? 'translateX(0)' : 'translateX(-100%)';
+            });
+        </script>
+    </main>
+</body>
+
+</html>
